@@ -1,0 +1,355 @@
+body {
+    font-family: 'Kosugi Maru', sans-serif;
+    background: linear-gradient(-45deg, rgba(238, 119, 82, 0.88), rgba(231, 60, 126, 0.88), rgba(35, 103, 213, 0.88), rgba(35, 213, 171, 0.88));
+    background-attachment: fixed;
+    background-position: right bottom;
+}
+
+a:link { color: rgba(0, 0, 0, 0.63); }
+a:visited { color: rgba(0, 0, 0, 0.63); }
+a:hover { color: rgba(0, 0, 0, 0.63); }
+a:active { color: rgba(0, 0, 0, 0.63); }
+
+.padding {
+    padding-top: 70px;
+    background: linear-gradient(-45deg, rgba(238, 119, 82, 0.88), rgba(231, 60, 126, 0.88), rgba(35, 103, 213, 0.88), rgba(35, 213, 171, 0.88));
+    background-size: 400% 400%;
+    animation: back 15s ease infinite;
+}
+
+@keyframes back {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.haneru{
+    animation: hane .3s ease infinite alternate;
+}
+
+@keyframes hane{
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-10px);}
+}
+
+.top-text {
+    display: flex;
+    justify-content: center;
+}
+
+.top-text h3 {
+    color: #fff;
+    font-size: 1.8em;
+    font-family: "Courier New", Consolas, monospace;
+    letter-spacing: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 15px solid;
+}
+
+.top-text .name {
+    width: 0;
+    animation:
+        type 1.6s steps(13, end) 1000ms forwards;
+}
+
+@keyframes type {
+    to {
+        width: 270px;
+    }
+}
+
+@keyframes typing {
+    from { width: 0; }
+}
+
+@keyframes cursor {
+    50% { border-right-color: transparent; }
+}
+
+.img-pro {
+    border-radius: 50%;
+    width:  100px;
+    height: 100px;
+    transition: all 0.6s ease 0s;
+}
+
+.img-pro:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+.main-text {
+    font-size: 20px;
+    margin: auto;
+    color: #fff;
+}
+
+.card-color-red {
+    background: rgba(231, 60, 113, 0.88);
+}
+
+.card-color-blue {
+    background: rgba(31, 229, 255, 0.87);
+}
+
+.card-color-yellow {
+    background: rgba(255, 185, 72, 0.88);
+}
+
+.card-color-green {
+    background: rgba(35, 213, 110, 0.88);
+}
+
+.footer-text {
+    text-align: center;
+    margin: auto;
+    color: #fff;
+}
+
+.jumbotron-text {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.breadcrumb {
+    font-family: 'Lexend Deca', sans-serif;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 80px;
+    background: rgba(255, 255, 255, 0.47);
+}
+
+.box {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 50px;
+    background: rgba(49, 49, 49, 0.4);
+}
+
+.box2 {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 30px;
+    transition: all 0.6s ease 0s;
+}
+
+.box2:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+.box2 .box2-link{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.box3 {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    padding: 20px;
+    background: rgba(195, 195, 195, 0.4);
+}
+
+.box4 {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+    background: rgba(195, 195, 195, 0.4);
+
+}
+
+.box5 {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    background: rgba(204, 204, 204, 0.69);
+    margin: 20px;
+}
+
+.box6 {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    padding: 20px;
+    background: rgba(195, 195, 195, 0.4);
+}
+
+.box7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    background: rgba(204, 204, 204, 0.69);
+}
+
+.box8 {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+span {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.banner-code {
+    color: rgba(74, 130, 206, 0.88);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.jumbotron {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    padding: 150px;
+}
+
+.jumbotron h1{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.jumbotron h1:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    display: inline-block;
+    width: 60px;
+    height: 5px;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0);
+    margin: 10px;
+    border: solid 2px rgba(82, 112, 238, 0.29)
+}
+
+.jumbotron-box {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    margin-top: -100px;
+    padding: 100px;
+    background: rgba(204, 204, 204, 0.69);
+}
+
+.jumbotron-box h1 {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.jumbotron-box h3 {
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+.line {
+    line-height: 50px;
+}
+
+.box-text {
+    text-align: left;
+    color: #000;
+}
+
+.link-box{
+    display: inline-block;
+    width: 100px;
+}
+
+.card-box{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+.link-box h4 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    color: rgba(77, 77, 77, 0.72);
+}
+
+.link-box i{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.copy-value {
+    cursor: pointer;
+    position: relative;
+}
+
+.tooltip-code::after {
+    content: 'コピーしました';
+    background: #313131;
+    display: inline-block;
+    color: #fff;
+    border-radius: 30px;
+    position: absolute;
+    left: 50%;
+    padding-bottom: 20px;
+    transform: translate(-50%, 0);
+    font-size: 12px;
+    padding: 4px 10px 6px 10px;
+}
+
+@keyframes tooltip-code {
+    to { opacity: 0; }
+}
+
+.link-box a:link {
+    color: rgba(77, 77, 77, 0.72);
+    font-size: 15px;
+}
+.link-box a:visited {
+    color: rgba(77, 77, 77, 0.72);
+}
+.link-box a:hover {
+    color: rgba(77, 77, 77, 0.72);
+}
+.link-box a:active {
+    color: rgba(77, 77, 77, 0.72);
+}
+
+@media screen and (max-width:480px){
+  .jumbotron {
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+      padding: 50px;
+      margin-bottom: 60px;
+  }
+  .jumbotron-box {
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+      margin-top: -100px;
+      padding: 10px;
+      background: rgba(204, 204, 204, 0.69);
+  }
+  .jumbotron-box h1 {
+      font-family: 'Varela Round', sans-serif;
+      font-size: 30px;
+  }
+  .breadcrumb {
+      font-family: 'Lexend Deca', sans-serif;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      margin-top: 50px;
+      border-radius: 80px;
+      background: rgba(255, 255, 255, 0.47);
+  }
+  .banner-code {
+      color: rgba(74, 130, 206, 0.88);
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 13px;
+  }
+}
